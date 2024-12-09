@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Estilos proprios -->
+
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/main.css">
+  
+    <!-- Imports de Estilos -->
+
+  <link rel="stylesheet" href="styles/buttons.css">
+  <link rel="stylesheet" href="styles/containers_and_frames.css">
+  
+  <link rel="shortcut icon" href="/assets/favicon/Favicon.ico">
+
+    <!-- Fontes -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <title>YugiOh-POH</title>
+</head>
+<body>
+
+<div class="bg-video">
+  <video class="video" autoplay loop muted>
+    <source src="assets/video/yugi.mp4" type="video/mp4">
+  </video>
+</div><!--Video de Fundo -->
+
+<div class="container">
+  <div class="container__left framed-golden-2">
+
+    <div class="score frame">
+      <span id="score">Win: 0 | Lose: 0</span>
+    </div><!-- pontos -->
+
+    <div class="card_avatar">
+      <img id="card_image">
+    </div><!-- Imagem da carta -->
+
+    <div class="card_details frame">
+      <p id="card-name">Selecione</p>
+      <p id="card-type">Uma Carta</p>
+    </div><!-- Detalhes da carta -->
+
+  </div><!--Container da Esquerda-->
+
+  <div class="container__right">
+
+    <div class="card-box__container">
+      <div id="enemy-cards" class="cards-box framed">
+
+      </div><!--cartas na mao-->
+
+      <div class="versus">
+        <div class="versus-top">
+            <div class="card-infield">
+              <img id="player-field-card" height="180px" width="125px">
+            </div>  
+            <img class="olho" src="assets/icons/millenium2.png" height="100px">
+            <div class="card-infield">
+              <img id="enemy-field-card" height="180px" width="125px">
+            </div>  
+        </div><!-- topo da parte versus -->
+        <div class="versus-bottom">
+            <button id="next-duel" class="rpgui-button" onclick="resetDuel()">Ganhou!</button>
+        </div>
+      </div><!-- versus -->
+
+      <div id="player-cards" class="cards-box framed">
+
+      </div><!--cartas na mao-->
+    </div>
+    
+  </div><!--Container da Direita-->
+
+</div> <!-- container -->
+
+  <script src="js/js.js" defer></script>
+</body>
+</html>

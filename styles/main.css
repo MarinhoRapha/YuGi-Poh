@@ -1,0 +1,145 @@
+body{
+  height: 100%;
+  cursor: url("../assets/cursor/yugicursor.png"), default;
+}
+
+button,a,img:hover,button:hover,a:hover{
+  cursor: url("../assets/cursor/yamiyugicursorGLOW.png"), auto;
+}
+.bg-video{
+  position: absolute;
+  z-index: -9999;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.bg-video .video{
+  height: 100vh;
+}
+
+.bg-video::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,.8) 50%, rgba(0,0,0,1) 100%)
+}
+
+.container{
+  position: relative;
+  z-index: 3;
+  display: flex;
+  height: 100vh;
+
+}
+
+.container__left{
+  display: flex;
+  width: 28%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.frame{
+  border: 3px solid #000;
+  border-radius: 10px;
+}
+.score{
+  background-color: #FFF;
+  padding: 1.8rem;
+  text-align: center;
+}
+
+.card_details{
+  background-color: #FFF;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 6rem;
+}
+
+#card-name{
+  font-size: .85rem;
+}
+
+#card-type{
+  font-size: 1rem;
+}
+
+#next-duel{
+  display: none;
+}
+
+.container__right{
+  width: 72%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card-box__container{
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 .8rem;
+}
+
+.versus{
+  display: flex;
+  flex-direction: column;
+  padding-top: .1rem;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+}
+
+.versus-top, .versus-bottom{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.versus-bottom{
+  margin-top: 1.5rem;
+}
+
+.cards-box{
+  height: 10rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.card-infield{
+  height: 11.2rem;
+  width: 8rem;
+  border-radius: 10px;
+}
+
+
+.olho{
+  margin: 0 1.3rem;
+}
+
+.card{
+  transition: transform 0.2s;
+}
+
+.card:hover{
+  transform: scale(1.2);
+}
+
